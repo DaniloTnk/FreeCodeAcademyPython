@@ -50,3 +50,26 @@ print ("   / |")
 print ("  /  |")
 print (" /   |")
 ```
+
+## Variables and Data Types
+To begin we will change the what we are printing to the George's Tale.
+```python
+print("There once was a man named George,")
+print("he was 70 years old.")
+print("He really liked the name George.")
+print("but didn't like being 70.")
+```
+
+So if we want to change the character name to John we have to look in all our code and change the places were George appear. The same thing if we want to change the character age. So to make it easier we will create two variables: "character_name" and "character_age" and we will chage our print function to print the variable values.
+
+
+ ```python
+character_name = "John"
+character_age = "35"
+
+print("There once was a man named " + character_name + ", ")
+print("he was " + character_age + "years old. ")
+print("He really liked the name " + character_name + ". ")
+print("but didn't like being " + character_age + ".")
+
+```
