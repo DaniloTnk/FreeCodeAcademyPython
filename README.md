@@ -68,8 +68,47 @@ character_name = "John"
 character_age = "35"
 
 print("There once was a man named " + character_name + ", ")
-print("he was " + character_age + "years old. ")
+print("he was " + character_age + " years old. ")
 print("He really liked the name " + character_name + ". ")
 print("but didn't like being " + character_age + ".")
+
+```
+
+We can test our variable changing their values.
+
+ ```python
+character_name = "Tom"
+character_age = "50"
+```
+
+If we run the code again we will see that the name and age are updated.
+We also can change the variable value in the middle of the code.
+
+ ```python
+character_name = "Tom"
+character_age = "50"
+
+print("There once was a man named " + character_name + ", ")
+print("he was " + character_age + " years old. ")
+
+character_name = "Mike"
+print("He really liked the name " + character_name + ". ")
+print("but didn't like being " + character_age + ".")
+```
+
+If you run this code you will see on your console that on the first line the name Tom appear but in the fourth line the name is Mike.
+
+We have many types of variables in python but we will see the three types that is most  usable in python, there are strings (like we use in out previous example), Numbers (that could be integers or not) and boolean (True or False, must be captal letter).
+
+ ```python
+#Strings must be inside " "
+character_name = "Tom"
+
+#Numbers
+character_age = 50 #Interger
+character_height = 1,60 #Not integer
+
+#Boolean
+is_male = True
 
 ```
