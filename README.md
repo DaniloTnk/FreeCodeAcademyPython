@@ -23,3 +23,30 @@ $ git commit -m "first commit"
 $ remote add origin <<Repository URL>>
 $ push -u origin master
 ```
+Open the git project folder (girrafeacademy) on pycharm and set the python interpreter as your enviroment python. Now you have everything that you need to starting learning python.
+
+## Hello World
+ To start we will create a new python file on the project, app.py. On this file we will write the following command
+```python
+print ("Hello World!")
+```
+You can now run the code and check the message printed on Pycharm console.
+
+## Drawing a Shape
+On this part we will draw a shape with the print function in multiple lines.
+```python
+print ("    /|")
+print ("   / |")
+print ("  /  |")
+print (" /   |")
+print ("/____|")
+```
+
+After run that we can see the draw that we did on Pycharm console. Python execute every line from top to bottom and the order matter. If we change the order and run the code again we will see that the draw doesn't show a triangle anymore.
+```python
+print ("/____|")
+print ("    /|")
+print ("   / |")
+print ("  /  |")
+print (" /   |")
+```
