@@ -7,11 +7,11 @@ $ mkdir FreeCodeCamp
 $ cd FreeCodeCamp
 $ virtualenv -p python3 freecodecamp
 $ source freecodecamp/bin/activate
-$ mkdir girraffeacademy
-$ cd girraffeacademy
+$ mkdir giraffeacademy
+$ cd giraffeacademy
 ```
 
-I create a general folder **FreeCodeCamp** that will be my root folder for this project, than I created the virtual environment, activated it and create my python project folder **girrafeacademy** this will be the project on git.
+I create a general folder **FreeCodeCamp** that will be my root folder for this project, than I created the virtual environment, activated it and create my python project folder **girafeacademy** this will be the project on git.
 Now I will make this folder a git project, create a README.md file and make my first commit.
 > Before this steps I have created a new repository on github name FreeCodeAcademyPython and copy the repository url. 
 
@@ -23,7 +23,7 @@ $ git commit -m "first commit"
 $ remote add origin <<Repository URL>>
 $ push -u origin master
 ```
-Open the git project folder (girrafeacademy) on pycharm and set the python interpreter as your enviroment python. Now you have everything that you need to starting learning python.
+Open the git project folder (girafeacademy) on pycharm and set the python interpreter as your enviroment python. Now you have everything that you need to starting learning python.
 
 ## Hello World
  To start we will create a new python file on the project, app.py. On this file we will write the following command
@@ -110,5 +110,43 @@ character_height = 1,60 #Not integer
 
 #Boolean
 is_male = True
-
 ```
+
+## Working with Strings
+Strings are one of the most used variable on python programs. We can have simple string as we did  before.
+ ```python
+print("Giraffe Academy")
+```
+
+When we are working on strings some times you need to break line, so we can use "\n" and the message will be displayed on a differnt line. If you want to write a quotation mark we need to put a special caracter ("\") before so python will know that is just a caracter and not the end of our string.
+
+ ```python
+print("Giraffe\nAcademy")
+print("Giraffe \"Academy\"")
+```
+
+We can use variables on our code when we are working with string and you can also concatenate strings just add then with + sing.
+
+ ```python
+phrase = "Giraffe Academy"
+print(phrase)
+print(phrase + " is cool.")
+```
+
+Strings types have some fucntions like .lower() or .upper() that will change our string to lower case or upper case.
+
+ ```python
+phrase = "Giraffe Academy"
+print(phrase.lower())
+print(phrase.upper())
+```
+
+We can combine functions as we will see in the next code example.
+ ```python
+phrase = "Giraffe Academy"
+print(phrase.isupper())
+print(phrase.upper().isupper())
+print(len(phrase))
+```
+
+When we run the code above we will see on Pycharm console False and True. This is because the frist line not all the letters are upper case so it return False, but when you use the .upper() function before them all the letter are on upper case so the fucntion .isupper() return True. On the fourth line we can see a new function len(), this function count how many chacacters have our string.
