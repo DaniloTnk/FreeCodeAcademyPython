@@ -1,3 +1,3 @@
-print("Girraffe Academy")
-print("Girraffe\nAcademy")
-print("Girraffe \"Academy\"")
+phrase = "Girraffe Academy"
+print(phrase)
+print(phrase + " is cool.")
