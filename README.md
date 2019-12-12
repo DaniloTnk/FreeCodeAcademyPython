@@ -167,3 +167,28 @@ Another common function of strings is the .replace(), this function receive two 
 phrase = "Giraffe Academy"
 print(phrase.replace("Giraffe","Elephant"))
 ```
+
+## Working with Numbers
+When working with number on python you can use integer, float, posive, negative and all the mathematical operations addition, subtraction, multiplication and division (**+**, **-** , **\***, **/**). You can also combine multiple operator and define their order by using parentheses.
+ ```python
+print(2) # Return 2
+print(2.0987) # Return 2.0987
+print(-2.0987) # Return -2.0987
+print(3 + 4) # Return 7
+print(3 - 4.5) # Return -1.5
+print(3 * 4 + 5) # Return 17
+print(3 * (4 + 5)) # Return 27
+```
+
+We have another operators that we can use, the mod operation return the remain of a division.
+ ```python
+print(10 % 3) # Return 1. 10/3 is 3 and remain 1.
+```
+
+We can use variables to save our numbers just like we did with strings, We can also convert numbers in strings using the str() function, we use this when we want to concatenate numbers and strings.
+ ```python
+my_number = 5
+print(my_number)
+print(str(my_number) + " my favorite number.")
+print(my_number + " my favorite number.") # Return error because we don't convert our number into string.
+```
