@@ -192,3 +192,14 @@ print(my_number)
 print(str(my_number) + " my favorite number.")
 print(my_number + " my favorite number.") # Return error because we don't convert our number into string.
 ```
+Let's see some functions that we can use with numbers. We can get the absolute value of an number with abs() function. We can calculate the power of a number using the pow() function, this required 2 numbers, first one is the base and the other one is the multiplying. The max() and min() functions show the maximun value and the minimun value of an list. The round() function will round a float number with the basic rules of rouding. Let's see some exemples.
+ ```python
+my_number = -5
+print(abs(my_number)) # Return 5
+print(pow(3, 2))  # Return 9
+print(pow(6, 4))  # Return 1296, 6*6*6*6
+print(max(6, 4))  # Return 6
+print(min(6, 4))  # Return 4
+print(round(3.3)) # Return 3
+print(round(3.7)) # Return 4
+```
