@@ -149,4 +149,15 @@ print(phrase.upper().isupper())
 print(len(phrase))
 ```
 
-When we run the code above we will see on Pycharm console False and True. This is because the frist line not all the letters are upper case so it return False, but when you use the .upper() function before them all the letter are on upper case so the fucntion .isupper() return True. On the fourth line we can see a new function len(), this function count how many chacacters have our string.
+When we run the code above we will see three lines on our console, the messages False, True and 15. This is because on the frist line not all the letters are upper case so it return False, but when you use the .upper() function before them all the letter are on upper case so the fucntion .isupper() return True. On the third line of our console we see the number 15, this is the return of the function len() this function count how many chacacters have our string.
+If we want to print just a specifc character of our string we can use some index to do that, and if you don't know what is the index of your character you can use the .index() function to discover it.
+
+ ```python
+phrase = "Giraffe Academy"
+print(phrase[0]) # To get the first character of phrase the captal G.
+print(phrase[3]) # Get the fourth character of phrase the first a.
+print(phrase.index("G")) # Show the index of the captal G.
+print(phrase.index("a")) # Show the index of the first a.
+print(phrase.index("Acad")) # Show the index where our string start.
+print(phrase.index("z")) # Bring an error because phrase don't have any z.
+```
