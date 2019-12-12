@@ -161,3 +161,9 @@ print(phrase.index("a")) # Show the index of the first a.
 print(phrase.index("Acad")) # Show the index where our string start.
 print(phrase.index("z")) # Bring an error because phrase don't have any z.
 ```
+
+Another common function of strings is the .replace(), this function receive two paramters the first one is a string to match and the second is what we want to replace. On the next exemple we will change "Girrafe" to "Elephant" and we we run will print "Elephant Academy".
+ ```python
+phrase = "Giraffe Academy"
+print(phrase.replace("Giraffe","Elephant"))
+```
