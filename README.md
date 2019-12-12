@@ -203,3 +203,15 @@ print(min(6, 4))  # Return 4
 print(round(3.3)) # Return 3
 print(round(3.7)) # Return 4
 ```
+
+Python have a library specifically for math functions we can import that library to get access from a bunch of new functons. The floor() function return the lesser integer than the value that we pass. The ceil() function return the biggest integer than the value that we pass.
+
+ ```python
+from math import * # This line allow us to use functions of library math
+print(floor(3.7))  # Return 3
+print(floor(2.9))  # Retutn 2
+print(floor(-5.5)) # Return -6 the next lowest integer value
+print(ceil(3.7))   # Return 4
+print(ceil(2.9))   # Return 3
+print(ceil(-5.5))  # Return -5 the next largest integer value
+```
