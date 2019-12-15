@@ -1,7 +1,9 @@
-first_number = input("Type a number: ")
-operator = input("Type the operation: ")
-second_number = input("Type the other number: ")
-expression = first_number + " " + operator + " " + second_number + " = "
+expression = input("Type your math expression: ")
+
+first_number = expression[0]
+operator = expression[1]
+second_number = expression[2]
+expression += "="
 
 if operator =="+":
      print( expression + str(int(first_number) + int(second_number)))
