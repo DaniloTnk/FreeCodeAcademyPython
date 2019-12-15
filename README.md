@@ -236,3 +236,41 @@ print("Hello " + name + "! You are " + age)
 ```
 
 When you run the code above you can check on your python console the message "Enter your name:", you can click on your console and type your name, after that the message "Enter your age:" and you can type your age, as result you will be able to see the "Hello user! You are XX"
+
+## Building a Basic Calculator
+
+We will build a basic calculator that will get two numbers of user and add then.
+ ```python
+num1 = input("Enter a number: ")
+num2 = input("Enter another number: ")
+result = num1 + num2
+print(result)
+```
+
+Let's run the code above and use numbers 5 and 8.3 as input as a result we will have this.
+```bash
+Enter a number: 5
+Enter another number: 8.3
+58.3
+```
+We can see the result is 58.3 instead of 13.3. This happens because input function convert user input to string no matter what they type. So our result just concatenate the strings, if we want to use the variables as numbers we have to convert then using the int() function.
+ ```python
+num1 = input("Enter a number: ")
+num2 = input("Enter another number: ")
+result = int(num1) + int(num2)
+print(result)
+```
+
+We can run and test it with the numbers 4 and 5. It will return 9.
+Great! Our first calculator ir ready and work for any interger number. But try to input 4.3 and 5.5.
+This return an error because our code are not able to treath decimal numbers. To change our program to be able to add two decimal numbers we can change the function int(), we will use float() that is a function to convert to not interger numbers.
+ ```python
+num1 = input("Enter a number: ")
+num2 = input("Enter another number: ")
+result = float(num1) + float(num2)
+print(result)
+```
+
+Now our calculator can make the sum of any numbers.
+
+## Mad Libs Game
