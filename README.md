@@ -215,3 +215,24 @@ print(ceil(3.7))   # Return 4
 print(ceil(2.9))   # Return 3
 print(ceil(-5.5))  # Return -5 the next largest integer value
 ```
+
+The last function that we will see is sqrt() as the name sugest it return the square root of an number.
+ ```python
+from math import * # This line allow us to use functions of library math
+print(sqrt(16)) # Return 4.
+print(sqrt(36)) # Return 6.
+print(sqrt(144)) # Return 12.
+```
+
+## Getting Input From Users
+
+Now that you are more familiar with prints and some functions let's starting work with users input. We will make a program that receieve the users name and we will answer him with a Hi.
+We will store the user name and age in two variables using the function input() this function you pass as a paramter the message that your user will see. After that we will use the variables that we have to print the user information.
+
+ ```python
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+print("Hello " + name + "! You are " + age)
+```
+
+When you run the code above you can check on your python console the message "Enter your name:", you can click on your console and type your name, after that the message "Enter your age:" and you can type your age, as result you will be able to see the "Hello user! You are XX"
