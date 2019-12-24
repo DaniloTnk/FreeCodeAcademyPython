@@ -274,3 +274,26 @@ print(result)
 Now our calculator can make the sum of any numbers.
 
 ## Mad Libs Game
+
+Mad libs game is a phrasal template word game where you fill some blank space with random words.  We will create our game with a famous poem.
+
+ ```python
+print("Roses are red")
+print("Violets are blue")
+print("I love you")
+```
+
+For our game we will change the words "red", "Violets" and "you" to a color, a Plural Noun and a celebrity. We will do this by creating 3 variables called color, plural_noun and celebrity and get input from user.
+After that we will change our print functions to print your variables on the right places.
+
+ ```python
+color = input("Enter a color: ")
+plural_noun = input("Enter a Plural Noun: ")
+celebrity = input("Enter a celebrity: ")
+
+print("Roses are " + color)
+print(plural_noun + " are blue")
+print("I love " + celebrity)
+```
+
+You can run the code above and input some words and check the result.
