@@ -1,2 +1,3 @@
 friends = ["Kevin", "Karen" , "Jim", "Oscar", "Toby"]
-print(friends[1:3])
+friends[3] = "Mike" # Update the value "Oscar" to "Mike".
+print(friends[3]) # Return Mike
