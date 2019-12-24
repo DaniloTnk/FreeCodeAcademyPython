@@ -63,7 +63,7 @@ print("but didn't like being 70.")
 So if we want to change the character name to John we have to look in all our code and change the places were George appears. The same thing if we want to change the character age. So to make it easier we will create two variables: "character_name" and "character_age" and we will change our print function to print the variable values.
 
 
- ```python
+```python
 character_name = "John"
 character_age = "35"
 
@@ -76,7 +76,7 @@ print("but didn't like being " + character_age + ".")
 
 We can test our variable by changing their values.
 
- ```python
+```python
 character_name = "Tom"
 character_age = "50"
 ```
@@ -84,7 +84,7 @@ character_age = "50"
 If we run the code again we will see that the name and age are updated.
 We also can change the variable value in the middle of the code.
 
- ```python
+```python
 character_name = "Tom"
 character_age = "50"
 
@@ -100,7 +100,7 @@ If you run this code you will see on your console that on the first line the nam
 
 We have many types of variables in python but we will see the three types that are most usable in python, there are strings (like we use in our previous example), Numbers (that could be integers or not) and boolean (True or False, must be capital letter).
 
- ```python
+```python
 #Strings must be inside " "
 character_name = "Tom"
 
@@ -114,20 +114,20 @@ is_male = True
 
 ## Working with Strings
 Strings are one of the most used variables in python programs. We can have a simple string as we did before.
- ```python
+```python
 print("Giraffe Academy")
 ```
 
 When we are working on strings some times you need to break the line, so we can use "\n" and the message will be displayed on a different line. If you want to write a quotation mark we need to put a special character ("\") before so python will know that is just a character and not the end of our string.
 
- ```python
+```python
 print("Giraffe\nAcademy")
 print("Giraffe \"Academy\"")
 ```
 
 We can use variables on our code when we are working with string and you can also concatenate strings just add then with + sing.
 
- ```python
+```python
 phrase = "Giraffe Academy"
 print(phrase)
 print(phrase + " is cool.")
@@ -135,14 +135,14 @@ print(phrase + " is cool.")
 
 Strings types have some functions like .lower() or .upper() that will change our string to lower case or upper case.
 
- ```python
+```python
 phrase = "Giraffe Academy"
 print(phrase.lower())
 print(phrase.upper())
 ```
 
 We can combine functions as we will see in the next code example.
- ```python
+```python
 phrase = "Giraffe Academy"
 print(phrase.isupper())
 print(phrase.upper().isupper())
@@ -152,7 +152,7 @@ print(len(phrase))
 When we run the code above we will see three lines on our console, the messages False, True and 15. This is because on the first line, not all the letters are upper case so it returns False, but when you use the .upper() function before them all the letters are on upper case so the function .isupper() returns True. On the third line of our console we see the number 15, this is the return of the function len() this function count how many characters have our string.
 If we want to print just a specific character of our string we can use some index to do that, and if you don't know what is the index of your character you can use the .index() function to discover it.
 
- ```python
+```python
 phrase = "Giraffe Academy"
 print(phrase[0]) # To get the first character of phrase the captal G.
 print(phrase[3]) # Get the fourth character of phrase the first a.
@@ -163,14 +163,14 @@ print(phrase.index("z")) # Bring an error because phrase don't have any z.
 ```
 
 Another common function of strings is the .replace(), this function receives two parameters the first one is a string to match and the second is what we want to replace. In the next example, we will change "Giraffe" to "Elephant" and we will run will print "Elephant Academy".
- ```python
+```python
 phrase = "Giraffe Academy"
 print(phrase.replace("Giraffe","Elephant"))
 ```
 
 ## Working with Numbers
 When working with number on python you can use integer, float, posive, negative and all the mathematical operations addition, subtraction, multiplication and division (**+**, **-** , **\***, **/**). You can also combine multiple operator and define their order by using parentheses.
- ```python
+```python
 print(2) # Return 2
 print(2.0987) # Return 2.0987
 print(-2.0987) # Return -2.0987
@@ -181,19 +181,19 @@ print(3 * (4 + 5)) # Return 27
 ```
 
 We have another operator that we can use, the mod operation returns the remainder of a division.
- ```python
+```python
 print(10 % 3) # Return 1. 10/3 is 3 and remains 1.
 ```
 
 We can use variables to save our numbers just like we did with strings, We can also convert numbers in strings using the str() function, we use this when we want to concatenate numbers and strings.
- ```python
+```python
 my_number = 5
 print(my_number)
 print(str(my_number) + " my favorite number.")
 print(my_number + " my favorite number.") # Return error because we don't convert our number into a string.
 ```
 Let's see some functions that we can use with numbers. We can get the absolute value of a number with abs() function. We can calculate the power of a number using the pow() function, this required 2 numbers, the first one is the base and the other one is the multiplying. The max() and min() functions show the maximum value and the minimum value of a list. The round() function will round a float number with the basic rules of rounding. Let's see some examples.
- ```python
+```python
 my_number = -5
 print(abs(my_number)) # Return 5
 print(pow(3, 2))  # Return 9
@@ -206,7 +206,7 @@ print(round(3.7)) # Return 4
 
 Python has a library specifically for math functions we can import that library to get access from a bunch of new functions. The floor() function returns the lesser integer than the value that we pass. The ceil() function returns the biggest integer than the value that we pass.
 
- ```python
+```python
 from math import * # This line allow us to use functions of library math
 print(floor(3.7))  # Return 3
 print(floor(2.9))  # Retutn 2
@@ -217,7 +217,7 @@ print(ceil(-5.5))  # Return -5 the next largest integer value
 ```
 
 The last function that we will see is sqrt() as the name sugest it return the square root of an number.
- ```python
+```python
 from math import * # This line allow us to use functions of library math
 print(sqrt(16)) # Return 4.
 print(sqrt(36)) # Return 6.
@@ -229,7 +229,7 @@ print(sqrt(144)) # Return 12.
 Now that you are more familiar with prints and some functions let's starting work with the user's input. We will make a program that receives the user's name and we will answer him with a Hi.
 We will store the user name and age in two variables using the function input() this function you pass as a parameter the message that your user will see. After that, we will use the variables that we have to print the user information.
 
- ```python
+```python
 name = input("Enter your name: ")
 age = input("Enter your age: ")
 print("Hello " + name + "! You are " + age)
@@ -240,7 +240,7 @@ When you run the code above you can check on your python console the message "En
 ## Building a Basic Calculator
 
 We will build a basic calculator that will get two numbers of user and add then.
- ```python
+```python
 num1 = input("Enter a number: ")
 num2 = input("Enter another number: ")
 result = num1 + num2
@@ -253,8 +253,8 @@ Enter a number: 5
 Enter another number: 8.3
 58.3
 ```
-We can see the result is 58.3 instead of 13.3. This happens because the input function convert user input to string no matter what they type. So our result just concatenates the strings, if we want to use the variables as numbers we have to convert then using the int() function.
- ```python
+We can see the result is 58.3 instead of 13.3. This happens because the input function converts user input to string no matter what they type. So our result just concatenates the strings, if we want to use the variables as numbers we have to convert then using the int() function.
+```python
 num1 = input("Enter a number: ")
 num2 = input("Enter another number: ")
 result = int(num1) + int(num2)
@@ -264,7 +264,7 @@ print(result)
 We can run and test it with numbers 4 and 5. It will return 9.
 Great! Our first calculator is ready and works for any integer number. But try to input 4.3 and 5.5.
 This return an error because our code are not able to treath decimal numbers. To change our program to be able to add two decimal numbers we can change the function int(), we will use float() that is a function to convert to not interger numbers.
- ```python
+```python
 num1 = input("Enter a number: ")
 num2 = input("Enter another number: ")
 result = float(num1) + float(num2)
@@ -277,7 +277,7 @@ Now our calculator can make the sum of any numbers.
 
 Mad libs game is a phrasal template word game where you fill some blank space with random words.  We will create our game with a famous poem.
 
- ```python
+```python
 print("Roses are red")
 print("Violets are blue")
 print("I love you")
@@ -286,7 +286,7 @@ print("I love you")
 For our game, we will change the words "red", "Violets" and "you" to a color, a Plural Noun and a celebrity. We will do this by creating 3 variables called color, plural_noun, and celebrity and get input from the user.
 After that, we will change our print functions to print your variables in the right places.
 
- ```python
+```python
 color = input("Enter a color: ")
 plural_noun = input("Enter a Plural Noun: ")
 celebrity = input("Enter a celebrity: ")
@@ -299,11 +299,36 @@ print("I love " + celebrity)
 You can run the code above and input some words and check the result.
 
 ## Lists
-When you are working with python you have to deal with a bunch of data and we have a way to organize that information on lists. We can store value in a variable as we are doing until now, but on lists, we can store multiple values and access then. We will see the basic of lists and some useful functions.
+When you are working with python you have to deal with a bunch of data and we have a way to organize that information on lists. We can store value in a variable as we are doing until now, but on lists, we can store multiple values and access then. We will see the basics of lists.
 
 Let's create a list of our friend's names. We have to give a name to our list and say to python that the variable that we are creating is a list and we do this by "[]" characters. The values inside our list are separated by "," as you can see in the example below. We have a list of three friends' names on it, let's printed and see the result.
 
- ```python
+```python
 friends = ["Kevin", "Karen", "Jim"]
 print(friends)
 ```
+
+We can check on the console and you see the list printed by python. But if we don't wanna the whole list, just one element. So the lists have index just like strings and also on lists, the index starts by 0. We can use positive or negative numbers. Use a negative number when we want to come backward.
+
+```python
+friends = ["Kevin", "Karen" , "Jim"]
+print(friends[0])  # Returns Kevin.
+print(friends[2])  # Returns  Jim.
+print(friends[-1]) # Returns Jim.
+print(friends[-2]) # Returns Karen.
+```
+
+Another way to select just part of a list is using ":" to specify where we want to our list start and finish your list.
+```python
+friends = ["Kevin", "Karen" , "Jim", "Oscar", "Toby"]
+print(friends[1:3]) # Return ["Karen", "Jim"]
+```
+So when we use [Start index: Final index],  the final index is not included on the returned list.
+We can also use just Start or Final indexes to set an inicial or final index that you want.
+You've learned that you can access some list elements by index, so you also can change the value of that element.
+```python
+friends = ["Kevin", "Karen" , "Jim", "Oscar", "Toby"]
+friends[3] = "Mike" # Update the value "Oscar" to "Mike".
+print(friends[3]) # Return Mike
+```
+## List Functions
