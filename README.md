@@ -297,3 +297,39 @@ print("I love " + celebrity)
 ```
 
 You can run the code above and input some words and check the result.
+As homework we have to do your own Mad Libs game.
+
+
+### Homework
+We will create a game where user input 3 colors, Plural Nouns and celebrity and we will print our storie 3 times with random selected words.
+We will change your input messege, the user have to type 3 colors instead of one and we want him to do that separated by space. The same with the other 2 inputs. Once we have our user input we have to convert the text to a list of elements, to do that we will use the string function split() by default this function slpit the string by spaces and return a list.
+After that we will need to import the module random and when we print our message we will use the function choice to select a random element of our list and print on console.
+
+  ```python
+import random
+
+colors = input("Enter 3 colors separated by space: ")
+plural_nouns = input("Enter 3 Plural Nouns separated by space: ")
+celebrities = input("Enter 3 celebrities separated by space: ")
+
+colors_list = colors.split()
+plural_nouns_list = plural_nouns.split()
+celebrities_list = celebrities.split()
+
+print("Roses are " + random.choice(colors_list))
+print(random.choice(plural_nouns_list) + " are blue")
+print("I love " + random.choice(celebrities_list))
+print("")
+print("Roses are " + random.choice(colors_list))
+print(random.choice(plural_nouns_list) + " are blue")
+print("I love " + random.choice(celebrities_list))
+print("")
+print("Roses are " + random.choice(colors_list))
+print(random.choice(plural_nouns_list) + " are blue")
+print("I love " + random.choice(celebrities_list))
+```
+
+This is a simple changes but we have learned a new string function split(), lists and choice() function of random library.
+TODO:
+Use a loop to print the message only 3 times.
+Create a test case.
